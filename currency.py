@@ -38,19 +38,8 @@ class CurrencyConverter:
         Method that will check if currency codes stored in the class attributes are valid.
         Otherwise the program will exit and display the relevant message provided in the assignment brief
 
-        Parameters
-        ----------
-        # => object
-
-        Pseudo-code
-        ----------
-        # => checks if the currency exists by calling check currency from frankfurter class
-
-        Returns
-        -------
-        # => TRUE if the currency exixts else exits
         """
-        # => To be filled by student
+        
 
         if self.api.check_currency(self.to_currency):
             if self.api.check_currency(self.from_currency):
@@ -65,19 +54,8 @@ class CurrencyConverter:
         """
         Method that will calculate the inverse rate from the value stored in the class attribute, round it to 4 decimal places and save it back in the class attribute inverse_rate.
 
-        Parameters
-        ----------
-        # => The object 
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => reverse rate 
         """
-        # => To be filled by student
+        
         self.reverse_rate = self.round_rate(self.api.get_historical_rate(self.to_currency, self.from_currency, self.date))
         return self.reverse_rate
          
@@ -86,20 +64,8 @@ class CurrencyConverter:
         """
         Method that will round an input argument to 4 decimals places.
 
-        Parameters
-        ----------
-        # => To be filled by student
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => To be filled by student
         """
 
-        # => To be filled by student
         return round(float(rate), 4)
 
     def get_historical_rate(self, amt=1):
@@ -107,20 +73,8 @@ class CurrencyConverter:
         Method that will call the Frankfurter API and get the historical conversion rate for the currencies (rounded to 4 decimals) and date stored in the class attributes.
         Then it will calculate the inverse rate and will exit by displaying the relevant message provided in the assignment brief
 
-        Parameters
-        ----------
-        # => To be filled by student
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => To be filled by student
         """
 
-        # => To be filled by student
         rate =  self.round_rate(self.api.get_historical_rate(self.from_currency, self.to_currency,self.date, amount=amt))
         inverse_rate = self.round_rate(self.api.get_historical_rate(self.to_currency, self.from_currency,self.date, amount=amt))
         print(f"The conversion rate on {self.date} from {self.from_currency} to {self.to_currency} was {rate}. "
