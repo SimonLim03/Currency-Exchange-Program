@@ -6,7 +6,6 @@ class TestAPI(unittest.TestCase):
     """
     Class used for testing the call_get() function in api.py
     """
-    # => To be filled by student
 
     def test_call_get(self):
         currencies_url = f"https://api.frankfurter.app/latest?&EUR&USD"
