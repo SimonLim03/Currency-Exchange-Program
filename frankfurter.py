@@ -27,20 +27,9 @@ class Frankfurter:
         """
         Method that will get the list of available currencies and returns it as a Python list.
 
-        Parameters
-        ----------
-        # => To be filled by student
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => To be filled by student
         """
         
-        # => To be filled by student
+       
         return self.currencies
 
     def check_currency(self, currency):
@@ -48,20 +37,8 @@ class Frankfurter:
         Method that will check if a provided currency code is valid and return True if that is the case.
         Otherwise it will return False.
 
-        Parameters
-        ----------
-        # => To be filled by student
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => To be filled by student
         """
         
-        # => To be filled by student
         if currency in self.currencies:
             return True
         return False
@@ -70,20 +47,9 @@ class Frankfurter:
         """
         Method that will call the historical API endpoint in order to get the conversion rate for a given dates and currencies. It will return an requests.models.Response object.
 
-        Parameters
-        ----------
-        # => To be filled by student
-
-        Pseudo-code
-        ----------
-        # => To be filled by student
-
-        Returns
-        -------
-        # => To be filled by student
         """
         
-        # => To be filled by student
+       
         url = f"{self.base_url}{from_date}?from={from_currency}&to={to_currency}&amount={amount}"
         #print(url)
         response = call_get(url)
