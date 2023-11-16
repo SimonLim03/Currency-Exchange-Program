@@ -5,7 +5,7 @@ class TestUrl(unittest.TestCase):
     """
     Class used for testing the url attributes of the Frankfurter class from checks.py
     """
-    # => To be filled by student
+    
     def test_check_frankfurter_class(self):
         currencies = f"https://api.frankfurter.app/latest?&EUR&USD"
         base_url = "https://api.frankfurter.app/"
@@ -23,7 +23,7 @@ class TestCurrenciesList(unittest.TestCase):
     """
     Class used for testing the currencies attribute of the Frankfurter class from checks.py
     """
-    # => To be filled by student
+  
     def test_currency_list(self):
         currencies = f"https://api.frankfurter.app/latest?&EUR&USD"
         base_url = "https://api.frankfurter.app/"
@@ -39,7 +39,7 @@ class TestCheckCurrency(unittest.TestCase):
     """
     Class used for testing the Frankfurter.check_currency() method from frankfurter.py
     """
-    # => To be filled by student
+   
     def test_check(self):
         currencies = f"https://api.frankfurter.app/latest?&EUR&USD"
         base_url = "https://api.frankfurter.app/"
@@ -54,7 +54,7 @@ class TestHistoricalRate(unittest.TestCase):
     """
     Class used for testing the Frankfurter.get_historical_rate() method from frankfurter.py
     """
-    # => To be filled by student
+   
     def test_check_historical(self):
         currencies = f"https://api.frankfurter.app/latest?&EUR&USD"
         base_url = "https://api.frankfurter.app/"
