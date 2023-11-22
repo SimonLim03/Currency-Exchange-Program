@@ -7,6 +7,7 @@ Name: Simon Lim
 This application is a currency converter, which allows to quickly convert one currency to another currency.
 This project used an open-source API: https://www.frankfurter.app/.
 The goal of the program is to display the current conversion rate between 2 currency codes at a specific date. It will also calculate the inverse conversion rate between these 2 currencies.
+Streamlit is used to deploy an application. The application is available for free
 
 ## How to Run the Program
 To run this application, a specific inputs in the console should be typed.
