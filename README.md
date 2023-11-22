@@ -10,14 +10,16 @@ The goal of the program is to display the current conversion rate between 2 curr
 Streamlit is used to deploy an application. The application is available for free
 
 ## How to Run the Program
-To run this application, a specific inputs in the console should be typed.
-python main.py <year-month-date> <currency1> <currency2>
-For example, it can be:
-python main.py 2002-01-01 GBP AUD
+- URL link: https://currency-exchange-program-gjftgwzpstgacwfyvb8d7f.streamlit.app/
+- To run this application, a specific inputs in the console should be typed, <year-month-date> <currency1> <currency2>
+For example, it can be: 2002-01-01 GBP AUD
 Once its processed, the following output will show up.
 "Enter the amount to be converted"
 and once the specific amount is typed, 
 the outputs about conversion rate from currency 1 to currency 2 and inversion rate will show up.
+
+![image](https://github.com/SimonLim03/Currency-Exchange-Program/assets/150989115/e8c6bd4e-782f-4ce2-bbba-9c1b248b66eb)
+
 
 ## Project Structure
 <p>
